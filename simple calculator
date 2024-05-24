@@ -1,0 +1,17 @@
+ip1 =float(input("enter the 1st value: ",))      #ip1 is input one
+ip2 =float(input("enter the 2nd value: ",))      #ip2 is input two
+op=input("enter the operator(+,-,*,/): ",)       #op is input operator from user
+if op == '+':
+    result = ip1+ip2
+elif op== '-':
+    result = ip1-ip2
+elif op== '*':
+    result = ip1*ip2
+elif op== '/':
+    if ip2 != 0:
+        result=ip1/ip2
+    else:
+        result="cannot divide by zero"
+else: 
+    result ="operation is invalid!!"    
+print(result)
